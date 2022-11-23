@@ -20,12 +20,13 @@ import java.util.*;
 
 public class CodeGenerator {
 
-    public static final String[] tableArray = {"test_code"};
+    public static final String[] tableArray = { "reserve_evaluate", "reserve_record", "reserve_rule_config"};
+//    public static final String[] tableArray = {"admin_user"};
     public static final String[] tablePrefixArray = {""};
-    public static final String packageName = "com.xiaosheng";
-    public static final String moduleName = "xs-visitor";
+    public static final String packageName = "com";
+    public static final String moduleName = "xiaosheng";
 
-    public static final String url = "jdbc:mysql://192.168.1.194:3306/parking?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=Asia/Shanghai";
+    public static final String url = "jdbc:mysql://192.168.1.194:3306/visitor?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=Asia/Shanghai";
     public static final String userName = "root";
     public static final String password = "admin123";
 
@@ -55,7 +56,7 @@ public class CodeGenerator {
                 .fileOverride() // 覆盖已生成文件
                 .disableOpenDir() // 禁止打开输出目录	默认值:true
                 .outputDir(systemPath ) // 指定输出目录	/opt/baomidou/ 默认值: windows:D:// linux or mac : /tmp
-                .author("csy") // TODO 作者名	默认值:作者
+                .author("lpy") // TODO 作者名	默认值:作者
                 .enableSwagger() // 开启 swagger 模式	默认值:false
 //                .enableKotlin() // 开启 kotlin 模式	默认值:false
 //                .dateType(DateType.TIME_PACK) // 时间策略	DateType.ONLY_DATE 默认值: DateType.TIME_PACK

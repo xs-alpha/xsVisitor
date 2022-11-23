@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.1.194:3306/visitor?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=Asia/Shanghai
     username: root
-    password: root
+    password: admin123
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size: 2
@@ -20,3 +20,20 @@ spring:
       max-open-prepared-statements: 20
       max-pool-prepared-statement-per-connection-size: 20
 
+  redis:
+    host: 192.168.1.147
+    port: 6379
+    database: 0
+    password: Cfmoto@123
+    timeout: 3000
+    jedis:
+      pool:
+        max-idle: 300
+        max-wait: 1000ms
+        max-total: 500
+        test-on-borrow: true
+        test-on-return: true
+
+#jwt 秘钥
+jwt:
+  secret: 56ac34bd8e133f4e4344c8b784957aa6ffe6552dd92

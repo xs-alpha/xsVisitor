@@ -11,10 +11,6 @@
 
     <artifactId>xsVisitor-services</artifactId>
 <dependencies>
-    <dependency>
-        <groupId>org.example</groupId>
-        <artifactId>xsVisitor-dao</artifactId>
-    </dependency>
 
     <dependency>
         <groupId>org.example</groupId>
@@ -29,6 +25,18 @@
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-extension</artifactId>
+        <version>3.5.0</version>
+        <scope>compile</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.example</groupId>
+        <artifactId>xsVisitor-dao</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <scope>compile</scope>
     </dependency>
 </dependencies>
 

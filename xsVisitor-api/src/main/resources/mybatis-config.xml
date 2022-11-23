@@ -15,9 +15,9 @@
         <setting name="useGeneratedKeys" value="true"/>
     </settings>
 
-<!--     <plugins>
-         <plugin interceptor="com.lyzh.msa.dao.util.SqlStatementInterceptor"></plugin>
-     </plugins>-->
+    <!--     <plugins>
+             <plugin interceptor="com.lyzh.msa.dao.util.SqlStatementInterceptor"></plugin>
+         </plugins>-->
 
     <!--<typeAliases>
         <typeAlias alias="Integer" type="java.lang.Integer" />
